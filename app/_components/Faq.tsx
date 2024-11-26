@@ -49,7 +49,7 @@ const Faq = () => {
       <AccordionItem value="item-3"className=' border-gray-700' >
         <AccordionTrigger>Is it animated?</AccordionTrigger>
         <AccordionContent className='text-gray-500'>
-          Yes. It's animated by default, but you can disable it if you prefer.
+          Yes. It&apos;s animated by default, but you can disable it if you prefer.
         </AccordionContent>
       </AccordionItem>
       <div className='mt-6'></div>

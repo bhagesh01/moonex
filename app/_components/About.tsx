@@ -1,5 +1,3 @@
-
-"use client"
 import AboutTable from '@/components/shared/about/AboutTable';
 import Features from '@/components/shared/about/Features';
 import { MessageCircleQuestion } from 'lucide-react';
