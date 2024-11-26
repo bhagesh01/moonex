@@ -9,7 +9,8 @@ import {
 
 const Faq = () => {
   return (
-    <div className='min-h-fit py-32 md:mt-16 px-10 md:px-56 relative' id='faq'>
+    <div className='min-h-fit py-32 md:mt-16 px-10 md:px-56 relative' id='faq'
+    style={{ fontFamily: "var(--font-raleway)" }}>
       <Image src={"./Ellipse-gradient.svg"} alt='ellipse gradient' height={600} width={600} className='absolute opacity-50 -left-10 top-72
       md:-left-44
       rounded-full
@@ -27,7 +28,7 @@ const Faq = () => {
 <div className='px-4 md:px-20 py-5 text-white mt-20 -z-10' id='glass-effect'>
 <div className='text-center mb-6'>
 <span className=' text-4xl font-semibold text-[#E4B40D]'
-style={{ fontFamily: "var(--font-raleway)" }}
+
 >
   FAQ</span>
 </div>

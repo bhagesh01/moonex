@@ -3,11 +3,11 @@ import { ArrowRight, Ham, Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import 'animate.css';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
@@ -40,12 +40,15 @@ const Navbar = () => {
     {
       id: 5,
       name: "Contact Us",
-      url: "#contact"
+      url: "#footer"
     },
   ];
 
   return (
-    <div className='w-full md:px-28 px-12 pt-8 flex items-center justify-between relative'>
+    <div className='w-full md:px-28 px-12 pt-8 flex items-center justify-between relative
+    animate__animated
+    animate__fadeInDown
+    '>
       <div>
         <Image src="./logo.svg" alt="logo" height={40} width={194}/>
       </div>
@@ -70,6 +73,7 @@ const Navbar = () => {
       <div>
         <button 
           className='lg:flex items-center px-6 py-2 rounded-full font-semibold bg-gradient-to-r from-[#E4B40D] to-[#FFE68F] hover:px-7 transition-all ease-in-out text-black group whitespace-nowrap hidden'
+          style={{ fontFamily: "var(--font-raleway)" }}
         >
           Connect Wallet
           <span 
@@ -104,8 +108,10 @@ const Navbar = () => {
         )
       })
     }
-    <DropdownMenuItem className='hover:bg-transparent'>
-      <button className='flex items-center px-6 py-2 rounded-full font-semibold bg-gradient-to-r from-[#E4B40D] to-[#FFE68F] transition-all ease-in-out text-black group whitespace-nowrap '>
+    <DropdownMenuItem>
+      <button className='flex items-center px-6 py-2 rounded-full font-semibold bg-gradient-to-r from-[#E4B40D] to-[#FFE68F] transition-all ease-in-out text-black group whitespace-nowrap '
+      style={{ fontFamily: "var(--font-raleway)" }}
+      >
         connect wallet
       </button>
     </DropdownMenuItem>
